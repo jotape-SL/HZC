@@ -1,0 +1,23 @@
+:root{
+    --corpo: #1D232A;
+    --cabeçalho: #1D232A;
+    --cabecalho-mobile: #15191C;
+    --menu-lateral: #15191C;
+    --cartao: #2C343A;
+    --fonte: #FFFFFF;
+    --fonte-alternativa: #95999C;
+    --links: #0480DC;
+    --botao: #0480DC;
+    --sombras: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+body{
+    background-color: var(--corpo);
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color: var(--fonte);
+}
