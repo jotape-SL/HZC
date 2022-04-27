@@ -1,0 +1,75 @@
+.cartao{
+    width: 100%;
+    border-radius: 22px;
+    overflow: hidden;
+    background-color: var(--cartao);
+}
+.cartao--destaque{
+    margin-bottom: 16px;
+}
+.cartao__conteudo{
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+.cartao__titulo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+}
+.cartao__perfil{
+    color: var(--fonte-alternativa);
+    font-size: .9rem;
+    grid-column: span 2;
+}
+.cartao__info{
+    display: flex;
+    align-items: center;
+    color: var(--fonte-alternativa);
+}
+.cartao__info--tempo::before{
+    content: "\e90c";
+    margin-right: 8px;
+}
+.cartao__info--views::before{
+    content: "\e90f";
+    margin-right: 8px;
+}
+.cartao__botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--botao);
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    font-size: .9rem;
+    justify-self: flex-end;
+}
+.cartao__botao--play::before{
+    content: "\e90b";
+    font-size: 24px;
+}
+.cartao__botao--destaque{
+    width: 100%;
+    grid-column: span 2;
+}
+.cartao__botao--destaque::before{
+    margin-right: 8px;
+}
+.cartao__destaque{
+    grid-column: span 2;
+}
+.secao{
+    display: grid;
+    gap: 16px;
+}
+.cartao__botao--comprar::before{
+    content: "\e901";
+    font-size: 24px;
+}
+.cartao__info--money::before{
+    content: "\e905";
+    margin-right: 8px;
+}

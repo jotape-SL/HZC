@@ -4,7 +4,7 @@
     background-color: var(--menu-lateral);
     width: 75vw;
     height: 100vh;
-    position: relative;
+    position: absolute;
     left: -100vw;
     transition: .4s;
 }
