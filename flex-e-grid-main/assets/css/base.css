@@ -21,3 +21,13 @@ body{
     font-family: 'Open Sans', 'icones', sans-serif;
     color: var(--fonte);
 }
+
+main{
+    padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+}
+.titulos-pagina{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
