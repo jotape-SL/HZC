@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/cabecalho.css" />
+    <link rel="stylesheet" href="./assets/css/menu-lateral.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
@@ -17,7 +18,14 @@
   </head>
   <body>
     <header class="cabecalho">
-      <button class="cabecalho__menu"><i></i></button>
+      <button
+        class="cabecalho__menu"
+        aria-expanded="false"
+        aria-haspopup="true"
+        aria-label="Abrir Menu"
+      >
+        <i></i>
+      </button>
       <img
         src="./assets/img/logo.svg"
         alt="Logo da HZC"
@@ -25,5 +33,31 @@
       />
       <button class="cabecalho__notificacao"><i></i></button>
     </header>
+    <nav class="menu-lateral">
+      <img
+        src="./assets/img/logo.svg"
+        alt="logotipo HZC"
+        class="menu-lateral__logo"
+      />
+      <a href="#" class="menu-lateral__link menu-lateral__link--inicio"
+        >Ínicio</a
+      >
+      <a href="#" class="menu-lateral__link menu-lateral__link--videos"
+        >Vídeos</a
+      >
+      <a href="#" class="menu-lateral__link menu-lateral__link--picos"
+        >Picos
+      </a>
+      <a href="#" class="menu-lateral__link menu-lateral__link--integrantes"
+        >Integrantes</a
+      >
+      <a href="#" class="menu-lateral__link menu-lateral__link--camisas"
+        >Camisas</a
+      >
+      <a href="#" class="menu-lateral__link menu-lateral__link--pinturas"
+        >Pinturas</a
+      >
+    </nav>
+    <script src="./assets/js/navMenu-animacao.js"></script>
   </body>
 </html>
