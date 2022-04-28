@@ -57,7 +57,7 @@
     content: "\e90a";
 }
 /* computador */
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1440px) {
     .menu-lateral{
         position: static;
         width: 200px;

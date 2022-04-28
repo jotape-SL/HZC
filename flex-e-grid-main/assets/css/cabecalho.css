@@ -20,7 +20,7 @@
 }
 
 /* computador */
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1440px) {
     .cabecalho{
         background-color: var(--cabecalho);
         display: grid;
