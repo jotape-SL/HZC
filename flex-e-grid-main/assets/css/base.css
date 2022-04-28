@@ -31,3 +31,11 @@ main{
     font-size: 1.5rem;
     font-weight: 700;
 }
+
+/*  */
+@media screen and (min-width:1024px){
+    body{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}
