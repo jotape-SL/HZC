@@ -4,7 +4,7 @@
     background-color: var(--menu-lateral);
     width: 75vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     left: -100vw;
     transition: .4s;
 }
@@ -24,7 +24,12 @@
     display: flex;
     align-items: center;
 }
-.menu-lateral__link :hover{
+.menu-lateral :hover{
+    border-left: 8px solid var(--fonte);
+    color: var(--fonte);
+    padding-left: 56px;
+}
+.active{
     border-left: 8px solid var(--fonte);
     color: var(--fonte);
     padding-left: 56px;
@@ -55,4 +60,20 @@
 }
 .menu-lateral__link--pinturas::before{
     content: "\e90a";
+}
+/* computador */
+@media screen and (min-width:1440px) {
+    .menu-lateral{
+        position: static;
+        width: 200px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+    .menu-lateral__logo:hover{
+        border-left: none;
+        color: var(--fonte);
+        align-self: center;
+        padding: 16px;
+        width: 118px;
+    }
 }

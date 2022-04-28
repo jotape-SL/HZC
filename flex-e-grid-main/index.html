@@ -32,6 +32,7 @@
         alt="Logo da HZC"
         class="cabecalho__logo"
       />
+      <p class="cabecalho__perfil">Bruno Lopez</p>
       <button class="cabecalho__notificacao"><i></i></button>
     </header>
     <nav class="menu-lateral">
@@ -40,7 +41,7 @@
         alt="logotipo HZC"
         class="menu-lateral__logo"
       />
-      <a href="#" class="menu-lateral__link menu-lateral__link--inicio"
+      <a href="#" class="menu-lateral__link menu-lateral__link--inicio active"
         >Ínicio</a
       >
       <a href="#" class="menu-lateral__link menu-lateral__link--videos"
@@ -60,16 +61,21 @@
       >
     </nav>
     <main class="principal">
-      <h2 class="titulos-pagina">Ínicio</h2>
-      <article class="cartao cartao--destaque">
+      <h2 class="titulo-pagina">Ínicio</h2>
+      <article class="cartao cartao--destaque destaque-videos">
         <img
           src="./assets/img/banner-mobile_1.png"
           alt="banner"
-          class="cartao__imgem"
+          class="cartao__imagem cartao__imagem--mobile"
+        />
+        <img
+          src="./assets/img/banner_1.png"
+          alt="banner"
+          class="cartao__imagem cartao__imagem--desktop"
         />
         <div class="cartao__conteudo">
           <p class="cartao__destaque">Vídeo em destaque</p>
-          <h3 class="cartao__titulo">HZC - Título</h3>
+          <h3 class="cartao__titulo">HZC - Life is...</h3>
           <p class="cartao__perfil">Bruno Lopes</p>
           <p class="cartao__info cartao__info--tempo">33 minutos</p>
           <p class="cartao__info cartao__info--views">33 vizualizações</p>
@@ -80,8 +86,63 @@
           </button>
         </div>
       </article>
-      <section class="secao">
-        <h3 class="titulos-pagina">Vídeos mais vistos</h3>
+      <article class="cartao cartao__recentes videos-recentes">
+        <h3 class="cartao__titulo">Vídeos recentes</h3>
+        <a href="#" class="cartao__link">Ver todos</a>
+        <ul class="cartao__lista">
+          <li class="cartao__item">
+            <img
+              src="./assets/img/miniatura_1.png"
+              alt=""
+              class="cartao__item-thumbnail"
+            />
+            <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+            <p class="cartao__item-perfil">Júlia Fonseca</p>
+          </li>
+          <li class="cartao__item">
+            <img
+              src="./assets/img/miniatura_2.png"
+              alt=""
+              class="cartao__item-thumbnail"
+            />
+            <h4 class="cartao__item-titulo">HZC -Vol.3</h4>
+            <p class="cartao__item-perfil">Júlia Fonseca</p>
+          </li>
+          <li class="cartao__item">
+            <img
+              src="./assets/img/miniatura_3.png"
+              alt=""
+              class="cartao__item-thumbnail"
+            />
+            <h4 class="cartao__item-titulo">HZC - Pescaria na Urca</h4>
+            <p class="cartao__item-perfil">Júlia Fonseca</p>
+          </li>
+          <li class="cartao__item">
+            <img
+              src="./assets/img/miniatura_4.png"
+              alt=""
+              class="cartao__item-thumbnail"
+            />
+            <h4 class="cartao__item-titulo">
+              Vidalocagi - Guerreiros do Asfalto
+            </h4>
+            <p class="cartao__item-perfil">Júlia Fonseca</p>
+          </li>
+          <li class="cartao__item">
+            <img
+              src="./assets/img/miniatura_5.png"
+              alt=""
+              class="cartao__item-thumbnail"
+            />
+            <h4 class="cartao__item-titulo">
+              Vidalocagi - Não importa o nível
+            </h4>
+            <p class="cartao__item-perfil">Júlia Fonseca</p>
+          </li>
+        </ul>
+      </article>
+      <section class="secao secao-videos">
+        <h3 class="titulo-pagina">Vídeos mais vistos</h3>
         <article class="cartao">
           <img
             src="./assets/img/video_1.png"
@@ -89,7 +150,7 @@
             class="cartao__imgem"
           />
           <div class="cartao__conteudo">
-            <h3 class="cartao__titulo">HZC - Título</h3>
+            <h3 class="cartao__titulo">HZC - Tudo sem Padrin</h3>
             <p class="cartao__perfil">Bruno Lopes</p>
             <p class="cartao__info cartao__info--tempo">33 minutos</p>
             <button
@@ -105,7 +166,7 @@
             class="cartao__imgem"
           />
           <div class="cartao__conteudo">
-            <h3 class="cartao__titulo">HZC - Título</h3>
+            <h3 class="cartao__titulo">HZC - Enter The Hu-flez</h3>
             <p class="cartao__perfil">Bruno Lopes</p>
             <p class="cartao__info cartao__info--tempo">33 minutos</p>
             <button
@@ -121,7 +182,7 @@
             class="cartao__imgem"
           />
           <div class="cartao__conteudo">
-            <h3 class="cartao__titulo">HZC - Título</h3>
+            <h3 class="cartao__titulo">HZC - Vol.3</h3>
             <p class="cartao__perfil">Bruno Lopes</p>
             <p class="cartao__info cartao__info--tempo">33 minutos</p>
             <button
@@ -137,7 +198,7 @@
             class="cartao__imgem"
           />
           <div class="cartao__conteudo">
-            <h3 class="cartao__titulo">HZC - Título</h3>
+            <h3 class="cartao__titulo">HZC - Love Machine</h3>
             <p class="cartao__perfil">Bruno Lopes</p>
             <p class="cartao__info cartao__info--tempo">33 minutos</p>
             <button
@@ -147,11 +208,67 @@
           </div>
         </article>
       </section>
-      <article class="cartao cartao--destaque">
+      <article class="cartao cartao__recentes produtos-recentes">
+        <h3 class="cartao__titulo">Artes recentes</h3>
+        <a href="#" class="cartao__link">Ver todos</a>
+        <ul class="cartao__lista">
+          <li class="cartao__item">
+            <img
+              src="./assets/img/arte_1.png"
+              alt=""
+              class="cartao__item-thumbnail"
+            />
+            <h4 class="cartao__item-titulo">Sem título 01</h4>
+            <p class="cartao__item-perfil">Antonio Tebyríça</p>
+          </li>
+          <li class="cartao__item">
+            <img
+              src="./assets/img/arte_2.png"
+              alt=""
+              class="cartao__item-thumbnail"
+            />
+            <h4 class="cartao__item-titulo">Sem título 02</h4>
+            <p class="cartao__item-perfil">Antonio Tebyríça</p>
+          </li>
+          <li class="cartao__item">
+            <img
+              src="./assets/img/arte_3.png"
+              alt=""
+              class="cartao__item-thumbnail"
+            />
+            <h4 class="cartao__item-titulo">Segurança</h4>
+            <p class="cartao__item-perfil">Rafael Gibson</p>
+          </li>
+          <li class="cartao__item">
+            <img
+              src="./assets/img/arte_4.png"
+              alt=""
+              class="cartao__item-thumbnail"
+            />
+            <h4 class="cartao__item-titulo">Malunguisse</h4>
+            <p class="cartao__item-perfil">Carolina Canavarro</p>
+          </li>
+          <li class="cartao__item">
+            <img
+              src="./assets/img/arte_5.png"
+              alt=""
+              class="cartao__item-thumbnail"
+            />
+            <h4 class="cartao__item-titulo">Coroa da converse</h4>
+            <p class="cartao__item-perfil">Nikolas de Murtas</p>
+          </li>
+        </ul>
+      </article>
+      <article class="cartao cartao--destaque destaque-produto">
         <img
           src="./assets/img/banner-mobile_2.png "
           alt="banner"
-          class="cartao__imgem"
+          class="cartao__imagem cartao__imagem--mobile"
+        />
+        <img
+          src="./assets/img/banner_2.png "
+          alt="banner"
+          class="cartao__imagem cartao__imagem--desktop"
         />
         <div class="cartao__conteudo">
           <p class="cartao__destaque">Nova arte</p>
@@ -166,8 +283,8 @@
           </button>
         </div>
       </article>
-      <section class="secao">
-        <h3 class="titulos-pagina">Camisas mais recentes</h3>
+      <section class="secao secao-produtos">
+        <h3 class="titulo-pagina">Camisas mais recentes</h3>
         <article class="cartao">
           <img
             src="./assets/img/produto_1.png"

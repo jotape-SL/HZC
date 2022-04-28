@@ -7,6 +7,9 @@
 .cartao--destaque{
     margin-bottom: 16px;
 }
+.cartao__imagem--desktop{
+    display:none;
+}
 .cartao__conteudo{
     padding: 16px;
     display: grid;
@@ -72,4 +75,87 @@
 .cartao__info--money::before{
     content: "\e905";
     margin-right: 8px;
+}
+.cartao__recentes{
+    display: none;
+}
+/* computador */
+@media screen and (min-width:1440px){
+    .cartao__imagem--desktop{
+        display:block;
+    }
+    .cartao__imagem--mobile{
+        display:none;
+    }
+    .cartao--destaque{
+        margin-bottom: 0;
+    }
+    .cartao__botao--destaque{
+        grid-column: auto;
+        padding: 16px 8px;
+    }    
+    .cartao__recentes{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        row-gap: 24px;
+        width: 256px;
+        padding: 16px;
+        box-sizing: border-box;
+        align-self: flex-start;
+    }
+    .cartao__recentes .cartao__titulo{
+        grid-column: auto;
+    }
+    .cartao__link{
+        font-size: .8rem;
+        font-weight: 600;
+        color: var(--links);
+        justify-self: flex-end;
+    }
+    .cartao__lista{
+        display: grid;
+        row-gap: 16px;
+        grid-column: span 2;
+    }
+    .cartao__item{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px;
+    }
+    .cartao__item-thumbnail{
+        grid-row: span 2;
+        width: 50px;
+        height: 50px;
+    }
+    .cartao__item-titulo{
+        font-size: .9rem;
+        line-height: 1.2rem;
+        font-weight: 700;
+    }
+    .cartao__item-perfil{
+        font-size: .8rem;
+        color: var(--fonte-alternativa);
+    }
+    .secao{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .destaque-videos{
+        grid-area: destaque-videos;
+    }
+    .videos-recentes{
+        grid-area: videos-recentes;
+    }
+    .secao-videos{
+        grid-area: secao-videos;
+    }
+    .destaque-produto{
+        grid-area: destaque-produto;
+    }
+    .produtos-recentes{
+        grid-area: produtos-recentes;
+    }
+    .secao-produtos{
+        grid-area: secao-produtos;
+    }
 }
