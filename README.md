@@ -33,10 +33,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - **[CSS](https://www.w3.org/Style/CSS/Overview.en.html)**
 - **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**
 
-### 📋 Pré-requisitos
-
-So precisa do navegador 😉
-
 ## ✒️ Autores
 
 * João Pedro de Sousa Cruz - *Front-end* - [Jotape_SL](https://github.com/jotape-SL)
