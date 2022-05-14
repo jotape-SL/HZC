@@ -9,15 +9,15 @@ Um site voltado a comunidade do Skate, construído a partir de um Curso da Alura
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), Editor de texto de sua preferência.
 
-#### 🎲 Rodando o Frontend
+#### 🎲 Rodando o Projeto
 
 ```bash
 
 # Clone este repositório
-$ git clone git@github.com:luanaggoncalves/technicalshare.frontend.git
+$ git clone git@github.com:jotape-SL/HZC.git
 
 # Abra o terminal e entre na pasta
-$ cd ./technicalshare.frontend
+$ cd ./HZC.git
 
 # Abra o arquivo index.html no navegador de sua preferência
 ```
