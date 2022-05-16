@@ -21,6 +21,9 @@ $ cd ./HZC.git
 
 # Abra o arquivo index.html no navegador de sua preferência
 ```
+## 🕸 Link para o site ``(Deploy feito pelo Vercel)``
+
+- **[HZC](https://hzc-ten.vercel.app/)**
 
 ---
 
